@@ -61,12 +61,17 @@ const News=({simplified})=>{
                 <div className="flex flex-col items-center justify-center">
                     <div className="relative">
                         <Combobox value={newsCategory} onChange={setNewsCategory}>
-                            <Combobox.Input
-                            className="w-30 h-7 md:h-10 md:w-60 px-4 py-2 pr-10 text-white placeholder-gray-400 bg-gray-800 rounded-md focus:outline-none"
+                            {/* <Combobox.Input */}
+                            <input className="w-30 h-7 md:h-10 md:w-60 px-4 py-2 pr-10 text-white placeholder-gray-400 bg-gray-800 rounded-md focus:outline-none"
+                            onChange={handleInputChange}
+                            onTouchStart={handleInputChange}
+                            value={query}
+                            placeholder="Search a crypto..."/>
+                            {/* className="w-30 h-7 md:h-10 md:w-60 px-4 py-2 pr-10 text-white placeholder-gray-400 bg-gray-800 rounded-md focus:outline-none"
                             onChange={handleInputChange}
                             value={query}
                             placeholder="Search a crypto..."
-                            />
+                            // /> */}
                             <button
                             className="absolute top-0 right-0 h-7 md:h-10 px-2 py-1 text-white bg-gray-800 rounded-md focus:outline-none"
                             onClick={handleButtonClick}
