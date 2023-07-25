@@ -32,17 +32,17 @@ const Cryptocurrencies=({simplified})=>{
 
     return(
       <>
-        {!simplified && <div className="text-white py-4 text-center font-semibold md:text-xl lg:text-2xl md:py-8">All Cryptocurrencies</div>}
+        {!simplified && <div className="text-white py-4 text-center text-xl font-bold md:text-xl lg:text-2xl md:py-8">All Cryptocurrencies</div>}
         {!simplified && <div className="text-center"><input type="text" placeholder="Search crypto" className="rounded-lg lg:w-1/4 text-center md:p-1 text-white placeholder-gray-400 bg-gray-800" onChange={(e)=> setSearchTerm(e.target.value)}/></div>}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 lg:gap-10 mt-5 md:mt-10 lg:mt-16 px-5 md:px-10 text-center">
             {cryptos?.map((currency) => (
               <div key={currency.uuid} className="bg-white text-black font-semibold rounded-2xl">
                 <Link to={`/crypto/${currency.uuid}`}>
-                  <div className="flex flex-row justify-between p-2 md:p-4 text-sm md:text-base lg:text-xl">
+                  <div className="flex flex-row justify-between p-2 md:p-4 text-base md:text-base lg:text-xl">
                     <div>{currency.rank}. {currency.name}</div>
-                    <div><img src={currency.iconUrl} alt="" className="h-[20px] w-[20px] md:h-[25px] md:w-[25px] lg:h-[35px] lg:w-[35px]"/></div>
+                    <div><img src={currency.iconUrl} alt="" className="h-[25px] w-[25px] md:h-[30px] md:w-[30px] lg:h-[35px] lg:w-[35px]"/></div>
                   </div>
-                  <div className="text-xs md:text-sm lg:text-base mx-1 mb-3">
+                  <div className="text-sm md:text-sm lg:text-base mx-1 mb-3">
                     <div>Price : ${millify(currency.price)}</div>
                     <div>Market Cap : ${millify(currency.marketCap)}</div>
                     <div>Change : {currency.change}%</div>

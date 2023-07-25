@@ -21,7 +21,7 @@ const Navbar = () => {
         <li className="hover:text-[#E5B8F4]"><Link to="/news">News</Link></li>
       </ul>
       <div className="md:hidden" onClick={handleNav}>
-        {!navSlide? <TfiMenuAlt size={18} /> : <TfiClose size={18} />}
+        {!navSlide? <TfiMenuAlt size={21} /> : <TfiClose size={21} />}
       </div>
       <div className={!navSlide? 'fixed left-[-100%]' : 'fixed left-0 top-0 w-[60%] h-full border-r border-r-white bg-gray-950 ease-in-out duration-500 z-10'}>
         <ul className="pt-24 px-5 text-base uppercase">

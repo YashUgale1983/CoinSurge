@@ -19,7 +19,7 @@ const Hero = ()=>{
                 {/* Left item  */}
                 <div className="flex flex-col w-11/12 md:w-1/2 text-white mt-8 md:mt-0">
                     <h1 className="text-3xl max-w-md font-bold text-center md:text-5xl md:text-left lg:mb-8">Global Statistics</h1>
-                    <div className="grid grid-cols-3 gap-2 mt-5 md:mt-8 text-xs md:text-xl lg:text-2xl">
+                    <div className="grid grid-cols-3 gap-2 mt-5 md:mt-8 text-[17px] md:text-xl lg:text-2xl">
                         <div className="col-span-2 lg:mb-8">
                             <p>Total cryptocurrencies</p>
                             <p className="text-gray-500">{millify(globalStats?.total)}</p>

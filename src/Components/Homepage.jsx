@@ -9,7 +9,7 @@ const Homepage=()=>{
         <>
         <Hero />
         <div className="text-white mt-8 md:mt-16 lg:mt-20">
-            <h1 className="text-md md:text-2xl lg:text-3xl text-center">Top 10 cryptocurrencies</h1>
+            <h1 className="text-xl font-bold md:text-2xl lg:text-3xl text-center">Top 10 cryptocurrencies</h1>
             <Cryptocurrencies simplified/>
             <div className="text-center m-4 text-xs md:m-8 md:text-sm lg:text-lg lg:m-12 hover:text-[#E5B8F4] flex flex-row justify-center space-x-2">
                 <Link to="/cryptocurrencies">
@@ -20,7 +20,7 @@ const Homepage=()=>{
             </div>
         </div>
         <div className="text-white mt-8 md:mt-16 lg:mt-20">
-            <h1 className="text-md md:text-2xl lg:text-3xl text-center">Latest Crypto News</h1>
+            <h1 className="text-xl font-bold md:text-2xl lg:text-3xl text-center">Latest Crypto News</h1>
             <News simplified/>
             <div className="text-center m-4 text-xs md:m-8 md:text-sm lg:text-lg lg:m-12 hover:text-[#E5B8F4] flex flex-row justify-center space-x-2">
                 <Link to="/news">
